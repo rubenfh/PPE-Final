@@ -3,6 +3,7 @@ import './App.css';
 import Topnav  from './Widgets/TopNavBar/TopNavBar';
 import Nav from './Widgets/Nav/Nav';
 import axios from 'axios';
+import Profile_user from './Widgets/User_Profile/Photo_profil';
 
 class ComponentDidMount extends Component{
   componentDidMount() {
@@ -31,6 +32,7 @@ class App extends Component {
                     <div className="divh">
             <Topnav/>
             <Nav/>
+            <Profile_user/>
             </div>
                 </div></div></aside>
 

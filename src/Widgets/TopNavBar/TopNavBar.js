@@ -10,7 +10,11 @@ const Topnav = props => (
             <ul>
                 
             </ul>
+            <div class="navbar">
+  <input type="text" placeholder="Search.."></input>
+  </div>
         </div>
+        
     </header>
 );
 
