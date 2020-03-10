@@ -2,21 +2,24 @@
     font-weight: bolder;
     font-size: 2vw;
     text-align: center;
-    margin: 2vw;
+    margin: 4vw;
 }
 
 .bouton {
-    font-size: 1vw;
+    margin-left: auto;
 }
 
 #panier {
     overflow: scroll;
+    width: auto;
+    height: 400px;
+    margin-left: auto;
 }
 
 
 #panier article {
     color: #89949b;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 #panier article img {
@@ -33,13 +36,12 @@
 
 #panier article figcaption {
     color: #4b5c66;
-    margin-top: 6px;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 @media (max-width: 600px) {
-    #panier article {
+    #panier article, #panier .bouton {
         font-size: 0.9em;
     }
 }
@@ -47,5 +49,11 @@
 @media (min-width: 1400px) {
     #panier article {
         font-size: 1.1em;
+    }
+}
+
+@media (min-width: 600px){
+    #panier .bouton {
+        font-size: 0.7em;
     }
 }

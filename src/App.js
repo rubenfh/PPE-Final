@@ -29,18 +29,8 @@ class App extends Component {
     //instead we pass a reference, we pass the address to that method
     return (
             <div>            
-              <aside>
-            <div className="row">
-                <div className="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-                    <div className="divh">
-            <Topnav/>
-            <Nav/>
-            </div>
-                </div></div></aside>
-          
-              <div className="homepage">
-              <Homepage/>
-              </div>
+              <Header/>
+              <Panier/>
               </div>
     );
   }
