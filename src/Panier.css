@@ -1,0 +1,51 @@
+#title {
+    font-weight: bolder;
+    font-size: 2vw;
+    text-align: center;
+    margin: 2vw;
+}
+
+.bouton {
+    font-size: 1vw;
+}
+
+#panier {
+    overflow: scroll;
+}
+
+
+#panier article {
+    color: #89949b;
+    margin: 10px 0;
+}
+
+#panier article img {
+    border: 1px solid #cbcbcb;
+    border-radius: 10%;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+#panier article img:hover {
+    box-shadow: 0 0 15px #848484;
+    transform: scale(1.1) rotate(-3deg);
+}
+
+#panier article figcaption {
+    color: #4b5c66;
+    margin-top: 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+    #panier article {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1400px) {
+    #panier article {
+        font-size: 1.1em;
+    }
+}
