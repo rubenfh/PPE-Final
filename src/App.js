@@ -3,6 +3,7 @@ import './App.css';
 import Topnav  from './Widgets/TopNavBar/TopNavBar';
 import Nav from './Widgets/Nav/Nav';
 import axios from 'axios';
+import Homepage from './Widgets/Homepage/Homepage';
 
 class ComponentDidMount extends Component{
   componentDidMount() {
@@ -25,6 +26,7 @@ class App extends Component {
     // don't put () next to clickDropDown or the method would be automatically executed
     //instead we pass a reference, we pass the address to that method
     return (
+            <div>
             <aside>
             <div className="row">
                 <div className="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-10">
@@ -33,6 +35,18 @@ class App extends Component {
             <Nav/>
             </div>
                 </div></div></aside>
+              
+          
+              <div className="homepage">
+              <Homepage/>
+              </div>
+              </div>
+
+            
+
+                
+                
+                
 
     );
   }
