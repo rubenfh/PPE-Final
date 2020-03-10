@@ -7,13 +7,25 @@
 
 .bouton {
     margin-left: auto;
+    background-color: #71da71 !important;
+    border-color:  #71da71 !important;
+}
+
+.bouton2 {
+    color: black !important;
+    background-color: white !important;
+    border-color:  white !important;
 }
 
 #panier {
     overflow: scroll;
     width: auto;
-    height: 400px;
+    height: 370px;
     margin-left: auto;
+}
+
+#pay {
+    background-color: #71da71;
 }
 
 

@@ -97,9 +97,9 @@ const Test = (props) => {
                 </Col>
 
                 <Col sm={{size: 3, offset: 1}}>
-                    <Card body id='pay' color='light'>
+                    <Card body id='pay'>
                         <CardTitle>TOTAL</CardTitle>
-                        <Button>Valider mon panier</Button>
+                        <Button className="bouton2">Valider mon panier</Button>
                     </Card>
                 </Col>
             </Row>

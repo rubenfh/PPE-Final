@@ -2,8 +2,9 @@ import React, {useState} from 'react';
 import { Collapse, Form, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, DropdownItem, FormGroup, Button, Input } from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.css";
 import { GiShinyApple, GiCarrot, GiBookmarklet, GiLightBulb } from 'react-icons/gi';
-import { FaUserFriends, FaQuestion, FaSearch } from 'react-icons/fa';
+import { FaUserFriends, FaQuestion, FaSearch, FaRegBell } from 'react-icons/fa';
 import { IoIosMail } from 'react-icons/io';
+import './Header.css';
 
 const Header = (props) => {
   const [collapsed, setCollapsed] = useState(true);
@@ -12,9 +13,9 @@ const Header = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light>
-        <NavbarBrand href="/" className="mr-auto">AgriCook</NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+      <Navbar light className="head">
+            <NavbarBrand href="/" className="mr-auto titre">AgriCook</NavbarBrand>
+            <NavbarToggler onClick={toggleNavbar} className="mr-2 menubtn" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
@@ -22,10 +23,10 @@ const Header = (props) => {
             </NavItem>
             <NavItem>
                 <DropdownItem divider/>
-                <Button className="mb-2" outline color="secondary">Vendre</Button>
+                <Button className="mb-2 test" outline>Vendre</Button>
             </NavItem>
             <NavItem>
-                <Button outline color="secondary">Connexion/Inscription</Button>
+                <Button outline className="test">Connexion/Inscription</Button>
                 <NavLink href="/">Comment ça marche ?</NavLink>
                 <DropdownItem divider/>
                 <p>Parcourir</p>
@@ -42,7 +43,7 @@ const Header = (props) => {
           </Nav>
         </Collapse>
       </Navbar>
-      <Navbar color="light" light>
+      <Navbar className="head">
           <Form inline>
             <FormGroup>
                 <Input type="select" className="mr-2">
