@@ -1,13 +1,14 @@
 import React from 'react';
 import Nav from "../Nav/Nav";
 import "./Homepage.css";
-import { Card, Button, CardTitle, CardText, Row, Col, CardImg  } from 'reactstrap';
+import { Card, Button, CardTitle, CardText, Row, Col, CardImg, Navbar } from 'reactstrap';
 
 
 const Homepage = (props) => {
  // <link rel="stylesheet" href="style.css" />
   return (
     
+   
     <div class="fixed-bottom">
       <Row>
       <center class="col-12">
@@ -20,8 +21,9 @@ const Homepage = (props) => {
     <Row>
       <Col sm="6">
       <Card className="text-center">
-        <CardTitle className="text-center">Pseudo vendeur</CardTitle>
+        <CardTitle className="text-center"> 👨🏻 Pseudo vendeur</CardTitle>
       <CardImg top width="100%" src="./poivron.png" alt="Card image cap" />
+      <div className="favoris">❤</div>
       <Card body>
           <CardTitle >Poivron</CardTitle>
           <CardText>Quantité : 10</CardText>
@@ -31,8 +33,9 @@ const Homepage = (props) => {
       </Col>
       <Col sm="6">
       <Card className="text-center">
-        <CardTitle className="text-center">Pseudo Vendeur</CardTitle>
+        <CardTitle className="text-center"> 👨🏻 Pseudo Vendeur</CardTitle>
       <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+      <div className="favoris">❤</div>
         <Card body>
           <CardTitle className="text-center">Olives</CardTitle>
           <CardText className="text-center">Quantité: 100g</CardText>
