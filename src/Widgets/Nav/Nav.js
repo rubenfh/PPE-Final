@@ -28,6 +28,7 @@ const Nav = () => (
             {close => <Menu close={close} />}
         </Popup>
     </div>
+    
 );
 
 export default Nav;
