@@ -1,0 +1,71 @@
+#title {
+    font-weight: bolder;
+    font-size: 2vw;
+    text-align: center;
+    margin: 4vw;
+}
+
+.bouton {
+    margin-left: auto;
+    background-color: #71da71 !important;
+    border-color:  #71da71 !important;
+}
+
+.bouton2 {
+    color: black !important;
+    background-color: white !important;
+    border-color:  white !important;
+}
+
+#panier {
+    overflow: scroll;
+    width: auto;
+    height: 370px;
+    margin-left: auto;
+}
+
+#pay {
+    background-color: #71da71;
+}
+
+
+#panier article {
+    color: #89949b;
+    margin: 20px 0;
+}
+
+#panier article img {
+    border: 1px solid #cbcbcb;
+    border-radius: 10%;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+#panier article img:hover {
+    box-shadow: 0 0 15px #848484;
+    transform: scale(1.1) rotate(-3deg);
+}
+
+#panier article figcaption {
+    color: #4b5c66;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 600px) {
+    #panier article, #panier .bouton {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1400px) {
+    #panier article {
+        font-size: 1.1em;
+    }
+}
+
+@media (min-width: 600px){
+    #panier .bouton {
+        font-size: 0.7em;
+    }
+}
