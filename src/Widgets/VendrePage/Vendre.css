@@ -9,11 +9,11 @@
     margin-bottom: 20px;
 }
 
-.buttons{
-    text-align: center;
+#submit{
+    background-color: #71da71;
+    margin-top: 1em;
 }
 
-form{
+Form {
     text-align: center;
-    margin-top: 1em;
 }

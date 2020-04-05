@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Topnav  from './Widgets/TopNavBar/TopNavBar';
-import Nav from './Widgets/Nav/Nav';
 import axios from 'axios';
 import Homepage from './Widgets/Homepage/Homepage';
 import Header from './Widgets/Header/Header';
