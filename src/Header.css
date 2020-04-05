@@ -1,0 +1,16 @@
+.head {
+    background-color: #71da71;
+}
+
+.titre, h5, p, NavLink {
+    color: white !important;
+}
+
+.menubtn {
+    background-color: white !important;
+}
+
+.test {
+    color: white !important;
+    border-color: white !important;
+}
