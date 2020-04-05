@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import Topnav  from './Widgets/TopNavBar/TopNavBar';
-import Nav from './Widgets/Nav/Nav';
 import axios from 'axios';
 import Homepage from './Widgets/Homepage/Homepage';
-import Header from './Header';
-import Panier from './Panier';
+import Header from './Widgets/Header/Header';
+import Panier from './Widgets/Panier/Panier';
+import Vendre from './Widgets/VendrePage/Vendre';
 
 class ComponentDidMount extends Component{
   componentDidMount() {
@@ -23,15 +23,13 @@ class App extends Component {
 
   render()
   {
-
     // {} will allow to reference the variables if dropdown button is clicked
     // don't put () next to clickDropDown or the method would be automatically executed
     //instead we pass a reference, we pass the address to that method
     return (
-            <div>            
+            <div>
               <Header/>
-              <Panier/>
-              </div>
+            </div>
     );
   }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from "../Nav/Nav";
+import Header from '../Header/Header';
 import "./Homepage.css";
 import { Card, Button, CardTitle, CardText, Row, Col, CardImg, Navbar } from 'reactstrap';
 

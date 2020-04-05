@@ -1,0 +1,19 @@
+#title {
+    font-weight: bolder;
+    font-size: 3vw;
+    text-align: center;
+    margin: 3vw;
+}
+
+#multi {
+    margin-bottom: 20px;
+}
+
+#submit{
+    background-color: #71da71;
+    margin-top: 1em;
+}
+
+Form {
+    text-align: center;
+}
