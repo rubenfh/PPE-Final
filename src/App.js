@@ -4,6 +4,9 @@ import Topnav  from './Widgets/TopNavBar/TopNavBar';
 import Nav from './Widgets/Nav/Nav';
 import axios from 'axios';
 import Homepage from './Widgets/Homepage/Homepage';
+import Header from './Widgets/Header/Header';
+import Panier from './Widgets/Panier/Panier';
+import Vendre from './Widgets/VendrePage/Vendre';
 
 class ComponentDidMount extends Component{
   componentDidMount() {
@@ -21,33 +24,14 @@ class App extends Component {
 
   render()
   {
-
     // {} will allow to reference the variables if dropdown button is clicked
     // don't put () next to clickDropDown or the method would be automatically executed
     //instead we pass a reference, we pass the address to that method
     return (
             <div>
-            <aside>
-            <div className="row">
-                <div className="col-8 col-sm-8 col-md-9 col-lg-9 col-xl-10">
-                    <div className="divh">
-            <Topnav/>
-            <Nav/>
+              <Header/>
+              <Vendre/>
             </div>
-                </div></div></aside>
-              
-          
-              <div className="homepage">
-              <Homepage/>
-              </div>
-              </div>
-
-            
-
-                
-                
-                
-
     );
   }
 }
